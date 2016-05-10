@@ -119,6 +119,39 @@ body {
   padding-right: 50px;
   height: 42px;
 }
+.header .cart-block {
+  display: block;
+  float: right;
+  padding-left: 20px;
+  position: relative;
+  height: 20px;
+  line-height: 20px;
+  margin-top: 10px;
+  margin-left: 5px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+}
+.header .cart-block:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(../img/spr.png);
+  background-position: -360px -178px;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 0;
+  top: 3px;
+}
+.header .cart-block span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #03a9f4;
+}
 .header .btn-block {
   display: none;
 }
@@ -138,6 +171,7 @@ body {
 .header .logo span {
   font-size: 12px;
   color: #bbbbbb;
+  display: none;
 }
 .header .logo:hover {
   text-decoration: none;
@@ -231,8 +265,7 @@ body {
   margin-right: 5px;
 }
 .header .main-soc-block,
-.header .main-menu-block,
-.header .cart-block {
+.header .main-menu-block {
   display: none;
 }
 .menu-mobile .btn-toggle {
@@ -635,6 +668,10 @@ body {
     height: 57px;
     padding-right: 80px;
   }
+  .header .cart-block {
+    margin-top: 18px;
+    margin-left: 35px;
+  }
   .header .logo {
     font-size: 24px;
     line-height: 25px;
@@ -643,39 +680,6 @@ body {
   }
   .header .logo span {
     font-size: 16px;
-  }
-  .header .cart-block {
-    display: block;
-    float: right;
-    padding-left: 20px;
-    position: relative;
-    height: 20px;
-    line-height: 20px;
-    margin-top: 18px;
-    margin-left: 35px;
-    color: #fff;
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center;
-  }
-  .header .cart-block:after {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    background-image: url(../img/spr.png);
-    background-position: -360px -178px;
-    width: 14px;
-    height: 14px;
-    position: absolute;
-    left: 0;
-    top: 3px;
-  }
-  .header .cart-block span {
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: #03a9f4;
   }
   .header .contacts-block {
     margin-top: 8px;
@@ -734,6 +738,11 @@ body {
   .menu-mobile .main-soc-block {
     top: 12px;
     right: 80px;
+  }
+}
+@media (min-width: 768px) {
+  .header .logo span {
+    display: inline-block;
   }
 }
 @media (min-width: 1000px) {
