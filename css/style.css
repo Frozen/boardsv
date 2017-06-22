@@ -3561,3 +3561,17 @@ h4,
     font-size: 24px;
   }
 }
+
+
+.pagination-box {
+    font-size: 13px;
+    line-height: 1.2;
+    color: #aaaaaa;
+    margin-bottom: 20px;
+}
+.pagination-box a {
+    display: inline-block;
+    position: relative;
+    color: #131415;
+    margin-right: 13px;
+}
